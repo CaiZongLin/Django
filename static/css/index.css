@@ -1,0 +1,46 @@
+
+/*
+#  用於　ｉｄ
+．　用於　ｃｌａｓｓ
+*/
+
+#banner{
+	height: 100px;
+	background-color: #123456;
+}
+
+#menu{
+	height: 50px;
+	background-color: #c6c6c6;
+}
+
+body{
+	margin: 0;
+}
+
+#content{
+	height:550px;
+
+}
+
+ul{
+
+	display: inline;
+
+}
+
+li{
+	list-style-type: none;
+	display: inline;
+	padding-left:5%;
+}
+
+
+
+#footer{
+	clear:both;
+	height: 50px;
+	background-color: #ff0000;
+	color:#ffffff;
+
+}

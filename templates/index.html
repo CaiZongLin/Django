@@ -1,0 +1,65 @@
+{% extends "Base.html" %}
+
+{% block title %}
+
+首頁
+
+{% endblock %}
+
+
+{% block Content %}
+
+            <!--================ Testimonial Area  =================-->
+        <section class="testimonial_area section_gap" >
+            <div class="container">
+                <div class="section_title text-center">
+                    <h2 class="title_color">這邊是首頁</h2>
+                    <p>您可以點及左上角查看各分頁，或是註冊成為會員 </p>
+                </div>
+
+                <div class="testimonial_slider owl-carousel">
+                    {% if request.session.Ulogined != True %}
+                    <div class="media testimonial_item">
+                        <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
+                        <div class="media-body">
+                            <h1>註冊成為會員 </h1>
+                            <a href="customer1/"><h4 class="sec_h4">請點這邊</h4></a>
+                        </div>
+                    </div>    
+                    {% endif %}
+                    <div class="media testimonial_item">
+                        <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
+                        <div class="media-body">
+                            <h1>修改會員資料 </h1>
+                            <a href="modifyInformation/"><h4 class="sec_h4">請點這邊</h4></a>
+                        </div>
+                    </div>
+                    <div class="media testimonial_item">
+                        <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
+                        <div class="media-body">
+                            <h1>前往產品列表</h1>
+                            <a href="product/"><h4 class="sec_h4">點此處</h4></a>
+                        </div>
+                    </div>    
+                    <div class="media testimonial_item">
+                        <img class="rounded-circle" src="image/testtimonial-1.jpg" alt="">
+                        <div class="media-body">
+                            <p>還沒想到要幹嘛，先放著</p>
+                            <a href="#"><h4 class="sec_h4">沒用處</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================ Testimonial Area  =================-->
+{% if messages %}
+    <script>
+
+    {% for msg in messages %}
+        alert('{{ msg.message }}');
+    {% endfor %}
+    
+</script>
+{% endif %}
+
+{% endblock %}

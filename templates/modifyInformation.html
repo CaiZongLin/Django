@@ -1,0 +1,36 @@
+{% extends "Base.html" %}
+
+{% block title %}
+
+修改個人資料
+
+{% endblock %}
+
+
+{% block Content %}
+
+<div style="clear:both;height: 150px;">
+</div>
+
+	<div style="text-align: center;">
+		<form action="" method="post">
+			{% csrf_token %}
+
+			修改會員名稱:<input type="text" name="cusName" /><br>
+			修改會員電話:<input type="text" name="cusPhone" /><br>
+			修改會員地址:<input type="text" name="cusAddress" /><br>
+			<input type="submit" value="修改" />
+		</form>	
+	</div>
+
+{% if messages %}
+    <script>
+
+    {% for msg in messages %}
+        alert('{{ msg.message }}');
+    {% endfor %}
+    
+</script>
+{% endif %}
+
+{% endblock %}

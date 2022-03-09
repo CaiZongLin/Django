@@ -1,0 +1,111 @@
+{% extends "Base.html" %}
+
+{% block title %}
+    聯絡我們
+{% endblock %}
+
+
+{% block css %}
+
+
+{% endblock %}
+
+{% block bannerArea %}
+        <!--================Breadcrumb Area =================-->
+        <section class="breadcrumb_area">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
+            <div class="container">
+                <div class="page-cover text-center">
+                    <h2 class="page-cover-tittle">聯絡我們</h2>
+                    <ol class="breadcrumb">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact/"class="active">Contact</a></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!--================Breadcrumb Area =================-->
+{% endblock %}
+
+
+{% block Content %}
+ {% csrf_token %}
+    <section class="contact_area section_gap">
+    <iframe style="margin-bottom: 10%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.7049076761373!2d120.70291211547122!3d24.146999284395438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d4e1e6b4477%3A0x6adaf00cc10c1544!2zNDAx5Y-w5Lit5biC5p2x5Y2A5p2x6Iux5Y2B5LqU6KGXMjYw5be3MTfomZ8!5e0!3m2!1szh-TW!2stw!4v1645943060825!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<!--
+                <div id="mapBox" class="mapBox" 
+                    data-lat="24.147147" 
+                    data-lon="120.705155" 
+                    data-zoom="13" 
+                    data-info="我家"
+                    data-mlat="24.147147"
+                    data-mlon="120.705155">
+                </div>
+-->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="contact_info">
+                            <div class="info_item">
+                                <i class="lnr lnr-home"></i>
+                                <h6>姓名</h6>
+                                <p>Lex(Cai Zong Lin)</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="lnr lnr-phone-handset"></i>
+                                <h6><a href="#">在職</a></h6>
+                                <p>微碧愛普科技有限公司</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="lnr lnr-envelope"></i>
+                                <h6><a href="#">職位</a></h6>
+                                <p>技術工程師</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <form class="row contact_form" action="" method="post" id="contactForm" novalidate="novalidate">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="name" placeholder="Enter your name">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="email" name="email" placeholder="Enter email address">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" name="subject" placeholder="Enter Subject">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="content"  rows="1" placeholder="Enter Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-right">
+                                <button type="submit" value="submit" class="btn theme_btn button_hover">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--gmaps Js-->
+        <script src="/static/vendors/nice-select/js/jquery.nice-select.js"></script>
+        <script src="/static/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="/static/vendors/isotope/isotope-min.js"></script>
+        <script src="/static/js/stellar.js"></script>
+        <script src="/static/vendors/lightbox/simpleLightbox.min.js"></script>
+        <!--gmaps Js-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjKbToryQHQdk4mj6qwCjGoLsdpxYWjIM"></script>
+        <script src="/static/js/gmaps.min.js"></script>
+        <!-- contact js -->
+        <script src="/static/js/jquery.form.js"></script>
+        <script src="/static/js/jquery.validate.min.js"></script>
+        <script src="/static/js/contact.js"></script>
+
+    
+
+
+
+
+{% endblock %}

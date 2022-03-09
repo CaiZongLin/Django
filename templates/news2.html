@@ -1,0 +1,28 @@
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<title>新聞</title>
+		
+	</head>
+
+	<body>
+		<h1>這個標題</h1>
+
+		{% for n in news %}
+
+			標題：{{ n.title }} <p></p>
+			內容：{{ n.content }} <p></p>
+			發佈日期：{{ n.create_date }} <p></p>
+
+
+
+
+		{% endfor %}
+
+
+
+
+
+	</body>
+</html>

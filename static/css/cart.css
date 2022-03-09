@@ -1,0 +1,21 @@
+#form1 {
+	margin: 0px;
+}
+#form1 th {
+	color: #FFF;
+	background-color: #999;
+}
+
+#maindiv {
+width: 690px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #CCC;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+ }

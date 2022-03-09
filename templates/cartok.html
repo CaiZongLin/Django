@@ -1,0 +1,20 @@
+{% extends "Base.html" %}
+
+{% block title %}
+購物車
+{% endblock %}
+
+{% block Content %}
+
+	<div style="margin-top: 100px">
+	</div>
+
+	<div id="maindiv">
+		<p class="title">訂購完成</p>
+		<p class="subject">感謝您的訂購!我們會立即處理您的訂單</p>
+		<p class="desc">親愛的<strong>{{name}}</strong>(先生/小姐),已經完成訂購程序，請耐心等待!<br />
+
+		<a href="/cartordercheck/?orderid={{orderid}}&customemail={{email}}">詳細內容請點選</a></p>
+	</div>
+
+{% endblock %}

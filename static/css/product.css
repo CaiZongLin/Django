@@ -1,0 +1,27 @@
+.info{	
+	clear: both;
+	margin: 0px auto 50px;	
+}
+
+
+
+.info .infoarea{
+  float:left;
+  padding: 10px;
+  width: 23%;
+  height:500px;
+
+}
+
+.info .infoarea img{
+  width: 100%;
+}
+
+
+.infoarea li{
+
+    list-style:none;
+    font-size:20px;
+
+
+}
